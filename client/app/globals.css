@@ -2,7 +2,6 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-
 :root {
   --background: oklch(0.9578 0.0058 264.5321);
   --foreground: oklch(0.4355 0.0430 279.3250);
@@ -37,7 +36,7 @@
   --sidebar-border: oklch(0.8083 0.0174 271.1982);
   --sidebar-ring: oklch(0.5547 0.2503 297.0156);
   --font-sans: Montserrat, sans-serif;
-  --font-serif: Georgia, serif;
+  --font-serif: Bentham, ui-serif, serif;
   --font-mono: Fira Code, monospace;
   --radius: 0.35rem;
   --shadow-x: 0px;
@@ -92,7 +91,7 @@
   --sidebar-border: oklch(0.4037 0.0320 280.1520);
   --sidebar-ring: oklch(0.7871 0.1187 304.7693);
   --font-sans: Montserrat, sans-serif;
-  --font-serif: Georgia, serif;
+  --font-serif: Bentham, ui-serif, serif;
   --font-mono: Fira Code, monospace;
   --radius: 0.35rem;
   --shadow-x: 0px;
@@ -162,13 +161,4 @@
   --shadow-lg: var(--shadow-lg);
   --shadow-xl: var(--shadow-xl);
   --shadow-2xl: var(--shadow-2xl);
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
 }

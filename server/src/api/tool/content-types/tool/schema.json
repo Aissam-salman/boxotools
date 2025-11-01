@@ -56,6 +56,13 @@
       "relation": "oneToOne",
       "target": "api::vote.vote",
       "mappedBy": "tool"
+    },
+    "illustration": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

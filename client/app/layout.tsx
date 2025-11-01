@@ -1,15 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fira_Code, Montserrat, Bentham} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-providers";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const montserrat = Montserrat({
+  variable: "--montserrat",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const bentham = Bentham({
+  variable: "--bentham",
+  weight: ["400"]
+})
+
+const firaCode = Fira_Code({
+  variable: "--fira-code",
   subsets: ["latin"],
 });
 
@@ -26,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable} ${firaCode.variable} ${bentham.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"
